@@ -446,3 +446,41 @@ nav a {
   height: 100%;
   border: 0;
 }
+
+/* --- Ajuste para la sección Sobre mí --- */
+
+/* Vista general (móvil por defecto) */
+.sobre-mi .perfil {
+  display: flex;
+  flex-direction: column; /* imagen arriba, texto abajo */
+  align-items: center;
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 150px;
+  margin-bottom: 20px; /* espacio debajo de la foto en móvil */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Vista escritorio */
+@media (min-width: 769px) {
+  .sobre-mi .perfil {
+    flex-direction: row;       /* imagen a la izquierda, texto a la derecha */
+    align-items: flex-start;   /* alinea arriba */
+    justify-content: flex-start;
+    gap: 40px;                 /* espacio entre imagen y texto */
+    text-align: left;
+  }
+
+  .foto-perfil {
+    width: 200px;
+    margin-bottom: 0;
+  }
+
+  .bio {
+    flex: 1;
+  }
+}
+
