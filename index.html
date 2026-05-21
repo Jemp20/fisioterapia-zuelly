@@ -3,142 +3,409 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fisioterapia Profesional</title>
+  <title>Zuelly Martinez · Fisioterapia Holística</title>
+  <meta name="description" content="Fisioterapia holística en Medellín. Terapia manual, biodescodificación, Reiki angelical y más. Atención personalizada con Zuelly Martinez.">
+  <link rel="icon" type="image/jpeg" href="Imagen7.jpg">
+  <link rel="apple-touch-icon" href="Imagen7.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="encabezado">
+
+  <!-- ── HEADER ── -->
+  <header class="encabezado" id="encabezado">
     <div class="logo-nav">
-        <img src="Imagen7.jpg" alt="Logo Zuelly Martinez Fisioterapeuta" class="logo">
-      <h1>Fisioterapia Holística</h1>
+      <img src="Imagen7.jpg" alt="Logo Zuelly Martinez Fisioterapeuta" class="logo">
+      <div class="logo-texto">
+        <span class="logo-nombre">Zuelly Martinez</span>
+        <span class="logo-subtitulo">Fisioterapia Holística</span>
+      </div>
     </div>
-    <nav>
-      <a href="#servicios">Servicios</a>
-      <a href="#sobre">Sobre mí</a>
-      <a href="#contacto">Contacto</a>
+    <button class="hamburguesa" id="btnMenu" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menuNav">
+      <a href="#servicios" class="nav-link">Servicios</a>
+      <a href="#galeria" class="nav-link">Galería</a>
+      <a href="#sobre" class="nav-link">Sobre mí</a>
+      <a href="#productos" class="nav-link">Productos</a>
+      <a href="#contacto" class="nav-link">Contacto</a>
+      <a href="https://wa.me/573157359079?text=Hola, quiero agendar una cita" class="nav-cita" target="_blank">Agendar cita</a>
     </nav>
   </header>
 
+  <!-- ── HERO ── -->
   <section class="hero" id="hero">
-  <div class="hero-contenido">
-    <h1>Recupera tu movilidad y bienestar</h1>
-    <p>Atención personalizada en fisioterapia profesional con enfoque holístico e integrativo</p>
-    <a href="https://wa.me/573157359079?text=Hola, quiero agendar una cita" 
-       class="btn" target="_blank">
-       Agendar cita
-    </a>
-  </div>
-</section>
-
-
-  <section id="servicios" class="section">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Sesión integral de biodescodificación y liberación emocional</li>
-      <li>Liberación miofascial facial</li>
-      <li>Liberación miofascial</li>
-      <li>Masaje relajante con piedras de sal del Himalaya</li>
-      <li>Reiki Angelical</li>
-      <li>Terapia de recuperacion</li>
-      <li>Armonía de tatuajes y cicatrices</li>
-    </ul>
-  </section>
-
-  <section id="galeria" class="section"> 
-    <h2>Galería de Terapias</h2> 
-    <div class="galeria"> 
-      <img src="Imagen9.jpeg" alt="Terapia emocional"> 
-      <img src="Imagen2.jpeg" alt="Liberación miofascial"> 
-      <img src="Imagen3.jpeg" alt="Aromaterapia y sahumerios"> 
-      <img src="Imagen4.jpeg" alt="Masaje de manos"> 
-      <img src="Imagen5.jpeg" alt="Liberación">
-      <img src="Imagen6.jpeg" alt="Reiki Angelical">
-    </div> 
-  </section>
-
-  <section id="portafolio" class="section">
-    <h2>Portafolio de Servicios 2026</h2>
-    <p>Puedes consultar nuestro portafolio completo aquí:</p>
-    <p><a href="Portafolio.pdf" class="btn">Descargar PDF</a></p>
-  </section>
-
-  <section id="sobre" class="section sobre-mi">
-    <h2>Sobre mí</h2>
-    <div class="perfil">
-      <img src="Imagen1.jpeg" alt="Foto de la fisioterapeuta" class="foto-perfil">
-      <div class="bio">
-        <h3>Formación Académica</h3>
-        <p>Soy fisioterapeuta egresada de la <strong>Universidad Libre de Barranquilla</strong>, con especialización en terapia manual y ortopedia. 
-        Mi formación clínica es la base desde la cual comprendo el cuerpo como un sistema inteligente, capaz de autorregularse cuando se le acompaña de manera adecuada.</p>
-
-        <h3>Filosofía de Trabajo</h3>
-        <p>Mi enfoque se fundamenta en la fisioterapia holística, integrando cuerpo, mente y energía en cada proceso terapéutico. Acompaño desde una mirada clínica, humana y consciente, combinando técnicas de la fisioterapia tradicional con terapias complementarias como Reiki angelical, biodescodificación y sanación cuántica, respetando siempre la individualidad y el proceso de cada persona.</p>
-
-        <h3>Experiencia</h3>
-        <p>He acompañado a pacientes en <strong>Barranquilla y Medellín</strong>, ofreciendo tratamientos personalizados que buscan recuperar la movilidad y el bienestar integral.</p>
-        <p>He aprendido a ver a cada individuo como un ser único y original, integrando cuerpo, mente y energía en un equilibrio sagrado. También me apasiona la herbología, lo que enriquece mi camino de sanación desde la naturaleza.</p>
+    <div class="hero-contenido">
+      <p class="hero-etiqueta">Fisioterapia · Bienestar · Energía</p>
+      <h1>Recupera tu equilibrio<br><em>cuerpo, mente y alma</em></h1>
+      <p class="hero-desc">Acompañamiento terapéutico personalizado con enfoque holístico e integrativo en Medellín</p>
+      <div class="hero-botones">
+        <a href="https://wa.me/573157359079?text=Hola, quiero agendar una cita" class="btn btn-primario" target="_blank">Agendar cita</a>
+        <a href="#servicios" class="btn btn-secundario">Ver servicios</a>
       </div>
     </div>
   </section>
 
-<section id="productos" class="section productos">
-  <h2>Productos Holísticos</h2>
-  <div class="catalogo">
-    <!-- Producto 1 -->
-    <div class="producto">
-      <img src="Aceite1.jpeg" alt="Aceite de sanación RAFAEL">
-      <h3>Aceite de sanación RAFAEL</h3>
-      <p>30ml · Terapia Holística Zuelly Martinez</p>
-      <p class="precio">$40.000 COP</p>
-      <!-- Botón de compra con MercadoPago -->
-      <a href="https://checkout.bold.co/payment/LNK_7AVKW3WBYA" 
-         class="btn" target="_blank">
-         Comprar ahora
-      </a>
-    </div>
-
-    <!-- Producto 2 -->
-    <div class="producto">
-      <img src="Sal1.jpeg" alt="Sales de limpieza energética">
-      <h3>Sales de limpieza energética</h3>
-      <p>Tienda Holística Zuelly Martinez</p>
-      <p class="precio">$25.000 COP</p>
-      <!-- Botón de compra con MercadoPago -->
-      <a href="https://checkout.bold.co/payment/LNK_7AVKW3WBYA" 
-         class="btn" target="_blank">
-         Comprar ahora
-      </a>
-    </div>
+  <!-- ── FRANJA DE CONFIANZA ── -->
+  <div class="franja-confianza">
+    <div class="franja-item"><span class="franja-num">5.0</span><span class="franja-label">★ Google Reviews</span></div>
+    <div class="franja-sep"></div>
+    <div class="franja-item"><span class="franja-num">+200</span><span class="franja-label">Pacientes atendidos</span></div>
+    <div class="franja-sep"></div>
+    <div class="franja-item"><span class="franja-num">10+</span><span class="franja-label">Terapias especializadas</span></div>
+    <div class="franja-sep"></div>
+    <div class="franja-item"><span class="franja-num">2</span><span class="franja-label">Ciudades · Medellín</span></div>
   </div>
-</section>
 
+  <!-- ── SERVICIOS ── -->
+  <section id="servicios" class="seccion seccion-clara">
+    <div class="contenedor">
+      <div class="seccion-encabezado animar">
+        <p class="etiqueta-seccion">Lo que ofrezco</p>
+        <h2>Servicios terapéuticos</h2>
+        <p class="seccion-desc">Cada sesión es un espacio sagrado diseñado para ti, integrando técnicas clínicas y terapias complementarias.</p>
+      </div>
+      <div class="servicios-grid">
 
+        <div class="servicio-card animar">
+          <h3>Biodescodificación</h3>
+          <p>Sesión integral de liberación emocional que conecta el origen emocional de las dolencias físicas para sanar desde la raíz.</p>
+        </div>
 
-  <section id="contacto" class="section">
-    <h2>Contacto</h2>
-    <p>📞 Teléfono: +57 3157359079</p>
-    <p>✉ Email: Martinezzuelly@gmail.com</p>
-    <p>📍 Dirección: Mall San Lucas plaza Cl. 20 Sur #27-55, La Abadía, Envigado, Medellín, El Poblado, Medellín, Antioquia</p>
+        <div class="servicio-card animar">
+          <h3>Liberación Miofascial</h3>
+          <p>Técnica manual que libera tensiones profundas del tejido conectivo, mejorando movilidad y reduciendo el dolor crónico.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Liberación Miofascial Facial</h3>
+          <p>Trabajo especializado en el rostro para liberar tensiones, mejorar la circulación y restaurar la armonía facial.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Masaje con Piedras de Sal</h3>
+          <p>Masaje relajante con piedras de sal del Himalaya que purifica la energía, relaja el sistema nervioso y nutre la piel.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Reiki Angelical</h3>
+          <p>Canalización de energía angelical para equilibrar los centros energéticos, reducir el estrés y promover la sanación interior.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Terapia de Recuperación</h3>
+          <p>Protocolo personalizado de recuperación física y emocional para restaurar el movimiento y el bienestar integral.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Armonía de Tatuajes y Cicatrices</h3>
+          <p>Trabajo energético y manual sobre cicatrices y tatuajes para liberar bloqueos y restaurar el flujo natural del cuerpo.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Sanación de Heridas de Infancia</h3>
+          <p>Acompañamiento profundo para sanar memorias emocionales de la infancia que se manifiestan en el cuerpo adulto.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Reconexión con la Niña Interior</h3>
+          <p>Proceso de sanación y reconexión espiritual para recuperar la alegría, la confianza y la esencia más auténtica.</p>
+        </div>
+
+        <div class="servicio-card animar">
+          <h3>Constelaciones Familiares Cuánticas</h3>
+          <p>Exploración de los patrones familiares y transgeneracionales que influyen en la salud física y emocional.</p>
+        </div>
+
+      </div>
+      <div class="seccion-cta animar">
+        <a href="https://wa.me/573157359079?text=Hola, quiero saber más sobre los servicios" class="btn btn-primario" target="_blank">Consultar disponibilidad</a>
+      </div>
+    </div>
   </section>
 
-<div class="mapa"> 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6259083208843!2d-75.57082388940442!3d6.1807991270250255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682f6a94a55e3%3A0x7a256710fd4fad69!2sSan%20Lucas%20Plaza!5e0!3m2!1ses!2sco!4v1767748497075!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
-  width="100%" 
-  height="400" 
-  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> 
-</iframe> </div>
-  
-  <footer>
-    <p>&copy; 2026 Fisioterapia Profesional. Todos los derechos reservados.</p>
-<div class="redes"> 
-  <a href="https://www.instagram.com/martinezzuellyy?igsh=MWkweWhjbnFtM3dxbA==" target="_blank" class="instagram"> 
-    <img src="logoig.png" alt="Instagram" class="icono-red"> Sígueme en Instagram </a> 
+  <!-- ── GALERÍA ── -->
+  <section id="galeria" class="seccion seccion-oscura">
+    <div class="contenedor">
+      <div class="seccion-encabezado animar">
+        <p class="etiqueta-seccion etiqueta-clara">Mi espacio</p>
+        <h2 class="titulo-claro">Galería de Terapias</h2>
+        <p class="seccion-desc seccion-desc-clara">Un vistazo al ambiente de sanación y bienestar que te espera.</p>
+      </div>
+      <div class="galeria">
+        <img src="Imagen9.jpeg" alt="Terapia emocional" class="animar">
+        <img src="Imagen2.jpeg" alt="Liberación miofascial" class="animar">
+        <img src="Imagen3.jpeg" alt="Aromaterapia y sahumerios" class="animar">
+        <img src="Imagen4.jpeg" alt="Masaje de manos" class="animar">
+        <img src="Imagen5.jpeg" alt="Liberación" class="animar">
+        <img src="Imagen6.jpeg" alt="Reiki Angelical" class="animar">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ── -->
+  <section id="testimonios" class="seccion seccion-clara">
+    <div class="contenedor">
+      <div class="seccion-encabezado animar">
+        <p class="etiqueta-seccion">Experiencias reales</p>
+        <h2>Lo que dicen mis pacientes</h2>
+      </div>
+      <script src="https://elfsightcdn.com/platform.js" async></script>
+      <div class="elfsight-app-b4d29e87-2f06-43e1-bfb2-ed4f11921276" data-elfsight-app-lazy></div>
+    </div>
+  </section>
+
+  <!-- ── SOBRE MÍ ── -->
+  <section id="sobre" class="seccion seccion-acento">
+    <div class="contenedor">
+      <div class="sobre-grid">
+        <div class="sobre-imagen animar-izq">
+          <img src="Imagen1.jpeg" alt="Zuelly Martinez Fisioterapeuta" class="foto-perfil">
+          <div class="sobre-badge">
+            <span>🎓</span>
+            <p>Universidad Libre<br>de Barranquilla</p>
+          </div>
+        </div>
+        <div class="sobre-texto animar-der">
+          <p class="etiqueta-seccion">Quién soy</p>
+          <h2>Zuelly Martinez</h2>
+          <p class="sobre-cargo">Fisioterapeuta · Terapeuta Holística</p>
+
+          <div class="sobre-bloque">
+            <h3>Formación Académica</h3>
+            <p>Fisioterapeuta egresada de la <strong>Universidad Libre de Barranquilla</strong>, con especialización en terapia manual y ortopedia. Mi formación clínica es la base desde la cual comprendo el cuerpo como un sistema inteligente, capaz de autorregularse cuando se le acompaña de manera adecuada.</p>
+          </div>
+
+          <div class="sobre-bloque">
+            <h3>Filosofía de Trabajo</h3>
+            <p>Mi enfoque integra cuerpo, mente y energía en cada proceso terapéutico. Combino técnicas de fisioterapia tradicional con terapias complementarias como Reiki angelical, biodescodificación y sanación cuántica, respetando siempre la individualidad de cada persona.</p>
+          </div>
+
+          <div class="sobre-bloque">
+            <h3>Experiencia</h3>
+            <p>He acompañado a pacientes en <strong>Barranquilla y Medellín</strong>, ofreciendo tratamientos personalizados que buscan recuperar la movilidad y el bienestar integral. También me apasiona la herbología, que enriquece mi camino de sanación desde la naturaleza.</p>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PORTAFOLIO ── -->
+  <section id="portafolio" class="seccion seccion-clara">
+    <div class="contenedor">
+      <div class="portafolio-caja animar">
+        <p class="etiqueta-seccion">Documentación</p>
+        <h2>Portafolio de Servicios 2026</h2>
+        <p>Consulta el catálogo completo de terapias, precios y paquetes disponibles.</p>
+        <a href="Portafolio.pdf" class="btn btn-primario" target="_blank">Descargar PDF</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTOS ── -->
+  <section id="productos" class="seccion seccion-clara">
+    <div class="contenedor">
+      <div class="seccion-encabezado animar">
+        <p class="etiqueta-seccion">Tienda holística</p>
+        <h2>Productos de Sanación</h2>
+        <p class="seccion-desc">Productos elaborados con intención terapéutica para complementar tu proceso de bienestar.</p>
+      </div>
+      <div class="productos-grid">
+
+        <div class="producto-card animar">
+          <div class="producto-imagen">
+            <img src="Aceite1.jpeg" alt="Aceite de sanación RAFAEL">
+            <span class="producto-badge">Más vendido</span>
+          </div>
+          <div class="producto-info">
+            <h3>Aceite de Sanación RAFAEL</h3>
+            <p>30ml · Terapia Holística Zuelly Martinez. Formulado con aceites esenciales de alta vibración para la sanación energética.</p>
+            <div class="producto-footer">
+              <span class="precio">$40.000 COP</span>
+              <a href="https://checkout.bold.co/payment/LNK_QHDM77VM5R" class="btn btn-primario btn-sm" target="_blank">Comprar</a>
+            </div>
+            <p class="producto-nota">Después de pagar escríbenos por <a href="https://wa.me/573157359079?text=Hola%20Zuelly%2C%20acabo%20de%20pagar%20el%20Aceite%20RAFAEL%20%F0%9F%8C%BF%20%C2%BFc%C3%B3mo%20coordinamos%20la%20entrega%3F" target="_blank">WhatsApp</a> para coordinar la entrega.</p>
+          </div>
+        </div>
+
+        <div class="producto-card animar">
+          <div class="producto-imagen">
+            <img src="Sal1.jpeg" alt="Sales de limpieza energética">
+          </div>
+          <div class="producto-info">
+            <h3>Sales de Limpieza Energética</h3>
+            <p>Tienda Holística Zuelly Martinez. Sales purificadoras para limpiar la energía del hogar y el cuerpo.</p>
+            <div class="producto-footer">
+              <span class="precio">$25.000 COP</span>
+              <a href="https://checkout.bold.co/payment/LNK_18GA91V3G4" class="btn btn-primario btn-sm" target="_blank">Comprar</a>
+            </div>
+            <p class="producto-nota">Después de pagar escríbenos por <a href="https://wa.me/573157359079?text=Hola%20Zuelly%2C%20acabo%20de%20pagar%20las%20Sales%20Energ%C3%A9ticas%20%E2%9C%A8%20%C2%BFc%C3%B3mo%20coordinamos%20la%20entrega%3F" target="_blank">WhatsApp</a> para coordinar la entrega.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACTO ── -->
+  <section id="contacto" class="seccion seccion-oscura">
+    <div class="contenedor">
+      <div class="seccion-encabezado animar">
+        <p class="etiqueta-seccion etiqueta-clara">Hablemos</p>
+        <h2 class="titulo-claro">¿Lista para comenzar?</h2>
+        <p class="seccion-desc seccion-desc-clara">Agenda tu sesión o escríbeme con cualquier pregunta. Estoy aquí para acompañarte.</p>
+      </div>
+      <div class="contacto-grid">
+
+        <div class="contacto-info animar-izq">
+          <div class="contacto-dato">
+            <span class="contacto-icono">📞</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p>+57 315 735 9079</p>
+            </div>
+          </div>
+          <div class="contacto-dato">
+            <span class="contacto-icono">✉</span>
+            <div>
+              <strong>Email</strong>
+              <p>Martinezzuelly@gmail.com</p>
+            </div>
+          </div>
+          <div class="contacto-dato">
+            <span class="contacto-icono">📍</span>
+            <div>
+              <strong>Ubicación</strong>
+              <p>Mall San Lucas Plaza, Cl. 20 Sur #27-55<br>Envigado, Medellín, Antioquia</p>
+            </div>
+          </div>
+          <a href="https://wa.me/573157359079?text=Hola, quiero agendar una cita" class="btn btn-whatsapp" target="_blank">
+            💬 Escribir por WhatsApp
+          </a>
+        </div>
+
+        <form class="formulario-contacto animar-der" id="formContacto">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono (opcional)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+          </div>
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primario">Enviar por WhatsApp 💬</button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MAPA ── -->
+  <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.6259083208843!2d-75.57082388940442!3d6.1807991270250255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4682f6a94a55e3%3A0x7a256710fd4fad69!2sSan%20Lucas%20Plaza!5e0!3m2!1ses!2sco!4v1767748497075!5m2!1ses!2sco"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
-  <div class="redes">
-    <a href="https://wa.me/message/W6KN2INZDE35G1" target="_blank" class="WhatsApp"> 
-    <img src="Logowhats.png" alt="WhatsApp" class="icono-red"> Mi contacto </a> 
-     </div>
-</footer>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-marca">
+        <img src="Imagen7.jpg" alt="Logo Zuelly Martinez" class="footer-logo">
+        <p class="footer-nombre">Zuelly Martinez</p>
+        <p class="footer-desc">Fisioterapeuta holística comprometida con tu bienestar integral en Medellín.</p>
+      </div>
+      <div class="footer-links">
+        <p class="footer-titulo">Navegación</p>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="footer-redes">
+        <p class="footer-titulo">Sígueme</p>
+        <a href="https://www.instagram.com/martinezzuellyy?igsh=MWkweWhjbnFtM3dxbA==" target="_blank" class="footer-red">
+          <img src="logoig.png" alt="Instagram" class="icono-red"> Instagram
+        </a>
+        <a href="https://wa.me/message/W6KN2INZDE35G1" target="_blank" class="footer-red">
+          <img src="Logowhats.png" alt="WhatsApp" class="icono-red"> WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zuelly Martinez · Fisioterapia Holística. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── Menú hamburguesa ──
+    const btnMenu = document.getElementById('btnMenu');
+    const menuNav = document.getElementById('menuNav');
+
+    btnMenu.addEventListener('click', () => {
+      const abierto = menuNav.classList.toggle('abierto');
+      btnMenu.classList.toggle('activo');
+      btnMenu.setAttribute('aria-expanded', abierto);
+    });
+
+    document.querySelectorAll('.nav-link, .nav-cita').forEach(link => {
+      link.addEventListener('click', () => {
+        menuNav.classList.remove('abierto');
+        btnMenu.classList.remove('activo');
+        btnMenu.setAttribute('aria-expanded', false);
+      });
+    });
+
+    // ── Header scroll: se vuelve más compacto al bajar ──
+    window.addEventListener('scroll', () => {
+      document.getElementById('encabezado').classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ── Formulario → WhatsApp ──
+    document.getElementById('formContacto').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre   = document.getElementById('nombre').value.trim();
+      const email    = document.getElementById('email').value.trim();
+      const telefono = document.getElementById('telefono').value.trim();
+      const mensaje  = document.getElementById('mensaje').value.trim();
+
+      let texto = `Hola Zuelly, te escribo desde tu página web 👋\n\n`;
+      texto += `*Nombre:* ${nombre}\n`;
+      texto += `*Email:* ${email}\n`;
+      if (telefono) texto += `*Teléfono:* ${telefono}\n`;
+      texto += `\n*Mensaje:*\n${mensaje}`;
+
+      window.open(`https://wa.me/573157359079?text=${encodeURIComponent(texto)}`, '_blank');
+      this.reset();
+    });
+
+    // ── Animaciones al hacer scroll ──
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('visible');
+          observador.unobserve(entrada.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.animar, .animar-izq, .animar-der').forEach(el => {
+      observador.observe(el);
+    });
+  </script>
 </body>
 </html>
-
