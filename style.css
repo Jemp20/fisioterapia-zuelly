@@ -647,6 +647,37 @@ a { text-decoration: none; }
   box-shadow: 0 0 0 3px rgba(201,169,110,0.2);
 }
 
+.campo-consentimiento { gap: 0; }
+
+.check-privacidad {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  text-transform: none;
+}
+
+.check-privacidad input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-top: 2px;
+  accent-color: var(--acento);
+  cursor: pointer;
+}
+
+.check-privacidad span {
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.75);
+  font-weight: 400;
+}
+
+.check-privacidad a {
+  color: var(--acento);
+  text-decoration: underline;
+}
+
 /* ═══════════════════════════════════════
    MAPA
 ═══════════════════════════════════════ */

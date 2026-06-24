@@ -304,6 +304,12 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué puedo ayudarte?" required></textarea>
           </div>
+          <div class="campo campo-consentimiento">
+            <label class="check-privacidad">
+              <input type="checkbox" id="consentimiento" name="consentimiento" required>
+              <span>He leído y acepto la <a href="politicas-privacidad.html" target="_blank">Política de Privacidad</a> y autorizo el tratamiento de mis datos personales para fines de contacto y agendamiento.</span>
+            </label>
+          </div>
           <button type="submit" class="btn btn-primario">Enviar por WhatsApp 💬</button>
         </form>
 
@@ -380,6 +386,12 @@
       const email    = document.getElementById('email').value.trim();
       const telefono = document.getElementById('telefono').value.trim();
       const mensaje  = document.getElementById('mensaje').value.trim();
+      const consentimiento = document.getElementById('consentimiento').checked;
+
+      if (!consentimiento) {
+        alert('Para continuar, por favor acepta la Política de Privacidad.');
+        return;
+      }
 
       let texto = `Hola Zuelly, te escribo desde tu página web 👋\n\n`;
       texto += `*Nombre:* ${nombre}\n`;
