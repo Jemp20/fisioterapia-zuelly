@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "fisioterapia-zuelly.vercel.app"
+        }
+      ],
+      "destination": "https://www.zuellymartinez.com/:path*",
+      "permanent": true
+    }
+  ]
+}
