@@ -28,10 +28,18 @@
   <!-- End Meta Pixel Code -->
 
   <meta charset="UTF-8">
+
+  <!-- ── Redirect: fuerza el dominio propio si alguien entra por vercel.app ── -->
+  <script>
+    if (window.location.hostname.includes('vercel.app')) {
+      window.location.replace('https://www.zuellymartinez.com' + window.location.pathname + window.location.search);
+    }
+  </script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zuelly Martinez · Fisioterapia Holística</title>
   <meta name="description" content="Fisioterapia holística en Medellín. Terapia manual, biodescodificación, Reiki angelical y más. Atención personalizada con Zuelly Martinez.">
-  <link rel="canonical" href="https://zuellymartinez.com/">
+  <link rel="canonical" href="https://www.zuellymartinez.com/">
   <link rel="icon" type="image/jpeg" href="Imagen7.jpg">
   <link rel="apple-touch-icon" href="Imagen7.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,8 +52,8 @@
   <meta property="og:site_name" content="Zuelly Martinez · Fisioterapia Holística">
   <meta property="og:title" content="Zuelly Martinez · Fisioterapia Holística en Medellín">
   <meta property="og:description" content="Fisioterapia holística en Medellín. Terapia manual, biodescodificación, Reiki angelical y más. Atención personalizada con Zuelly Martinez.">
-  <meta property="og:url" content="https://zuellymartinez.com/">
-  <meta property="og:image" content="https://zuellymartinez.com/Imagen7.jpg">
+  <meta property="og:url" content="https://www.zuellymartinez.com/">
+  <meta property="og:image" content="https://www.zuellymartinez.com/Imagen7.jpg">
   <meta property="og:image:width" content="1600">
   <meta property="og:image:height" content="1600">
   <meta property="og:locale" content="es_CO">
@@ -54,7 +62,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Zuelly Martinez · Fisioterapia Holística en Medellín">
   <meta name="twitter:description" content="Fisioterapia holística en Medellín. Terapia manual, biodescodificación, Reiki angelical y más.">
-  <meta name="twitter:image" content="https://zuellymartinez.com/Imagen7.jpg">
+  <meta name="twitter:image" content="https://www.zuellymartinez.com/Imagen7.jpg">
 
   <!-- ── Datos estructurados para Google (ficha de negocio local) ── -->
   <script type="application/ld+json">
@@ -62,8 +70,8 @@
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
     "name": "Zuelly Martinez · Fisioterapia Holística",
-    "image": "https://zuellymartinez.com/Imagen7.jpg",
-    "url": "https://zuellymartinez.com/",
+    "image": "https://www.zuellymartinez.com/Imagen7.jpg",
+    "url": "https://www.zuellymartinez.com/",
     "telephone": "+573157359079",
     "email": "Martinezzuelly@gmail.com",
     "priceRange": "$25.000 - $150.000 COP",
